@@ -6,9 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Deporte;
-
-class DeporteController extends Controller
+class GeneralController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +15,7 @@ class DeporteController extends Controller
      */
     public function index()
     {
-        return response()->json(Deporte::get());
+        //
     }
 
     /**
@@ -49,7 +47,7 @@ class DeporteController extends Controller
      */
     public function show($id)
     {
-        return response()->json(json_encode(Deporte::find($id)));
+        //
     }
 
     /**
